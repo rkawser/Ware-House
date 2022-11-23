@@ -62,3 +62,12 @@
     height: 40px;
     width: 250px;
 }
+
+.f-social{
+    color:rgba(0, 255, 255, 0.61);
+}
+
+.f-social:hover{
+color: rgba(255, 166, 0, 0.514);
+cursor: pointer;
+}

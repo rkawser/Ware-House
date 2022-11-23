@@ -4,6 +4,8 @@ import './Footer.css';
 import foterlogo from '../../image/logo.png';
 import suppport from '../../image/footerimage/support.png';
 import addresh from '../../image/footerimage/addresh.png';
+import foterLogo from '../../image/footerimage/foter-logo.png'
+import { FaFacebookF, FaTwitter, FaPinterest, FaVimeo, FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer>
@@ -51,11 +53,26 @@ const Footer = () => {
                                     <input type="text" />
                                     <button className='f-btn'>SUBSCRIBE</button>
                                 </div>
+                                <div className='d-flex mt-3 justify-content-around'>
+                                    <p className='fs-2 f-social '><FaFacebookF /></p>
+                                    <p className='fs-2 f-social'><FaTwitter /></p>
+                                    <p className='fs-2 f-social'><FaPinterest /></p>
+                                    <p className='fs-2 f-social'><FaVimeo /></p>
+                                    <p className='fs-2 f-social'><FaInstagram /></p>
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </Container>
+                <hr  className='text-light'/>
+                <Container>
+                    <div className='d-flex justify-content-between'>
+                        <p className='text-light'>Copyright © 2022 Raihan Kawser. All Rights Reserved.</p>
+                        <img src={foterLogo} height={30} alt="" />
+                    </div>
+                </Container>
             </div>
+           
         </footer>
     );
 };

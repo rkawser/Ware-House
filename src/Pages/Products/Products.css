@@ -1,0 +1,199 @@
+
+
+/* .product-text{
+    text-align: center;
+} */
+
+.product-text2{
+    text-align: center;
+}
+
+.brand-1{
+    background-image: url('https://i.ibb.co/stJrjSr/10001.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-2{
+     background-image: url('https://i.ibb.co/CH8MYqx/10002.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-3{
+     background-image: url('https://i.ibb.co/pdNVtVt/10003.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-4{
+     background-image: url('https://i.ibb.co/N1tdwqG/10004.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-5{
+     background-image: url('https://i.ibb.co/TPNHgV1/10005.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-6{
+     background-image: url('https://i.ibb.co/F4d76Tf/10006.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-7{
+     background-image: url('https://i.ibb.co/58HdvJz/10007.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-8{
+     background-image: url('https://i.ibb.co/0q4Y2HD/10008.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-9{
+     background-image: url('https://i.ibb.co/MS6523t/10009-2.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-10{
+     background-image: url('https://i.ibb.co/3Nc6pJM/10010-1.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-11{
+     background-image: url('https://i.ibb.co/j6pwNbz/10011-1.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.brand-12{
+     background-image: url('https://i.ibb.co/vc59dzp/10012.jpg');
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+
+.brand-1:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-2:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-3:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-4:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-5:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-6:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-7:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-8:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-9:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-10:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-11:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.brand-12:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+
+
+.product-section{
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 20px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* brand name */
+
+.brand-name{
+    background-color:#105caa ;
+    padding:20px 5px;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 0px 0px 5px 0px;
+}

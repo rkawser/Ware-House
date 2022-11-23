@@ -1,0 +1,20 @@
+
+
+.notfound-page{
+    background-image: url('https://i.ibb.co/NYynhGF/10001-1.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.nf-btn{
+    background-color: aqua;
+    border: none;
+    height: 40px;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}

@@ -1,0 +1,37 @@
+.watch1 {
+    background-image: url('https://i.ibb.co/zXCnMr4/10001.jpg');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.watch2 {
+    background-image: url('https://i.ibb.co/52xxGx2/10034.jpg');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.watch3 {
+    background-image: url('https://i.ibb.co/KxgXTTd/10033.jpg');
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.watch-section{
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 5px;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.watch-text{
+    background-color:#105caa ;
+    padding:20px 5px;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 0px 0px 5px 0px;
+}
