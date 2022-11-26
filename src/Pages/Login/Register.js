@@ -9,6 +9,7 @@ const Register = () => {
                 <Row>
                     <Col md={6}>
                         <div>
+                            <h5 className='login-text'>REGISTER</h5>
                             <form action="">
                                 <input type="text" name="" id="" placeholder='Name' required />
                                 <input type="email" name="" id="" placeholder='Email' required /> <br />
@@ -22,7 +23,7 @@ const Register = () => {
                     </Col>
 
                     <Col md={6}>
-                        <div className='login-image'>
+                        <div className='register-image'>
 
                         </div>
                     </Col>

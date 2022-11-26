@@ -9,6 +9,7 @@ const Login = () => {
                 <Row>
                     <Col md={6}>
                         <div>
+                            <h5 className='login-text'>LOGIN</h5>
                             <form action="">
                                 <input type="email" name="" id="" placeholder='Email' required /> <br />
                                 <input type="password" name="" id="" placeholder='Password' required /><br />

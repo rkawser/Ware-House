@@ -1,7 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import UseProducts from '../../Hooks/UseProducts';
+import Product from './Product';
 import './Products.css'
 const Products = () => {
+    const [products] = UseProducts()
     return (
         <Container className='my-5 product-section'>
             <Row>
@@ -51,7 +54,13 @@ const Products = () => {
                     </div>
                 </Col>
 
-                <Col md={9} className='product-text2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil odit harum cupiditate ad neque odio voluptatum vel optio? Et, hic fugiat vel numquam quis expedita optio provident iste veritatis tempore ratione dolore quibusdam explicabo. Deleniti blanditiis adipisci vitae, animi repudiandae alias perspiciatis aut sequi nemo praesentium officia asperiores error quod nam, obcaecati, voluptas totam at eos? Ipsa eaque numquam quos saepe iste corrupti aut. Amet placeat dolor reiciendis fuga quo doloremque rerum, beatae temporibus, consectetur officiis deserunt tempora hic odit praesentium nulla ea veniam. Facere totam neque temporibus fugiat? Illum quidem tempore fugit officia dicta in facere consequatur nihil quod.</Col>
+                <Col md={9} className='product-text2 mt-5'>
+                    <div className='row gy-5'>
+                        {
+                            products.map(service => <Product key={service._id} service={service}></Product>)
+                        }
+                    </div>
+                </Col>
             </Row>
         </Container>
     );

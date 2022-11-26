@@ -9,6 +9,7 @@ import MyOrders from './Pages/MyOrders';
 import Footer from './Pages/Share/Footer';
 import NotFound from './NotFound/NotFound';
 import Register from './Pages/Login/Register';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/myorder' element={<MyOrders></MyOrders>}></Route>
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

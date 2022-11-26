@@ -1,19 +1,26 @@
-
-.login-image{
+.login-image {
     background-image: url('https://i.ibb.co/GFR5KR8/10001.png');
     height: 350px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;
 }
 
-.login-page{
+.register-image {
+    background-image: url('https://i.ibb.co/X4gmfwP/Untitled-design-2-1.png');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.login-page {
     background-color: rgba(0, 0, 0, 0.452);
     padding: 20px 10px;
     border-radius: 5px;
 }
 
-form input{
+form input {
     width: 70%;
     padding: 10px 10px;
     margin-top: 10px;
@@ -21,14 +28,14 @@ form input{
     border: none;
 }
 
-.login-btn{
+.login-btn {
     background-color: #105caa;
     width: 35%;
     font-weight: bold;
     color: aliceblue;
 }
 
-.reset-btn{
+.reset-btn {
     background-color: #105caa;
     width: 35%;
     font-weight: bold;
@@ -36,13 +43,19 @@ form input{
     margin-left: 5px;
 }
 
-.Register-btn{
+.Register-btn {
     background-color: #105caa;
     font-weight: bold;
     color: aliceblue;
     margin-left: 5px;
 }
 
-.new-user{
-   color: #105caa;
+.new-user {
+    color: #105caa;
+}
+
+.login-text {
+    color: #105caa;
+    font-size: 30px;
+    font-weight: bold;
 }
