@@ -11,6 +11,8 @@
     background-color: rgba(0, 0, 0, 0.733);
 }
 
-.reviw-bg{
-   
+.review-text{
+    color:whitesmoke;
+    border-bottom: 3px solid #105cca;
+    line-height: 50px;
 }

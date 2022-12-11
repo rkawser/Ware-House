@@ -10,6 +10,9 @@ import Footer from './Pages/Share/Footer';
 import NotFound from './NotFound/NotFound';
 import Register from './Pages/Login/Register';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import DetailsPage from './Pages/Details/DetailsPage';
+import RequreAuth from './RequreAuth';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -17,11 +20,26 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/manage' element={<Manage></Manage>}></Route>
-        <Route path='/myorder' element={<MyOrders></MyOrders>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/manage' element={
+          <RequreAuth>
+            <Manage></Manage>
+          </RequreAuth>
+        }></Route>
+        <Route path='/myorder' element={
+          <RequreAuth>
+            <MyOrders></MyOrders>
+          </RequreAuth>
+        }></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/addproduct' element={<AddProduct></AddProduct>}></Route>
+        <Route path='/product/:detail/:type' element={
+          <RequreAuth>
+            <DetailsPage></DetailsPage>
+          </RequreAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

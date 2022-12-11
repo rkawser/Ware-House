@@ -1,0 +1,42 @@
+
+
+.about-bg{
+    background-image: url('https://i.ibb.co/WWgFqST/top-view-desk-accessories-slate-background.jpg');
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.452);
+    /* background-attachment: fixed; */
+}
+
+.bg-text a{
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bold;
+ color: aliceblue;
+}
+
+
+.about-image{
+    background-image: url('https://i.ibb.co/d0kn8W3/about.jpghttps://i.ibb.co/d0kn8W3/about.jpg');
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-text{
+    text-align: justify;
+}
+
+.about-text p{
+    border-bottom: 3px solid #105cca;
+}
+
+.about-text h6{
+    color: black;
+    background-color: #105dca25;
+    padding: 10px 5px;
+    border-radius: 5px;
+}

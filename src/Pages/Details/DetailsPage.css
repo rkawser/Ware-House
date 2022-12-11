@@ -1,0 +1,16 @@
+.confirm-order form input {
+    margin-top: 20px;
+    padding: 15px 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+#order-btn {
+    background-color: #105caa;
+    font-weight: bold;
+    color: white;
+}
+
+.order-text{
+    color: #105caa;
+}

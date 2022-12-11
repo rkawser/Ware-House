@@ -4,11 +4,12 @@ import Slider from "react-slick";
 import './Review.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Loading from '../Share/Loading';
 
 const Review = () => {
     const [review, setReview] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://ware-house-server-production.up.railway.app/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, [])
@@ -52,6 +53,9 @@ const Review = () => {
     return (
         <Container className='reviw-bg d-flex align-items-center' fluid>
             <Container>
+                <h2 className='review-text text-start mb-5'>Happy Customer  :)</h2>
+                {
+                    review.length > 0 ?
                 <Slider {...settings}>
                     {
                         review.map(review => <Card className='w-75'>
@@ -65,8 +69,11 @@ const Review = () => {
                             </Card.Body>
                         </Card>)
                     }
-
                 </Slider>
+                :
+                <div>
+                    <Loading></Loading>
+                </div>}
             </Container>
 
         </Container>

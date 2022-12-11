@@ -3,8 +3,10 @@
 .w-btn{
     background-color: #105daa49!important;
     transition: 0.6s;
+    
 }
 
 .w-btn:hover{
     background-color: #105cc1!important;
+    
 }
