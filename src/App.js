@@ -13,6 +13,8 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import DetailsPage from './Pages/Details/DetailsPage';
 import RequreAuth from './RequreAuth';
 import About from './Pages/About/About';
+import DashBord from './Pages/DashBoard/DashBord';
+import Payment from './Pages/Payment/Payment';
 
 function App() {
   return (
@@ -40,6 +42,9 @@ function App() {
             <DetailsPage></DetailsPage>
           </RequreAuth>
         }></Route>
+
+        <Route path='dashboard' element={<DashBord></DashBord>}></Route>
+        <Route path='payment' element={<Payment></Payment>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

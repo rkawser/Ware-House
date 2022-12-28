@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import axiosPrivate from '../Api/AxiosPrivate';
 import auth from '../Firebase/Firebase.init';
+import Loading from './Share/Loading';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -12,16 +13,16 @@ const MyOrders = () => {
 
     useEffect(() => {
         const email = user?.email;
-        const url = `https://ware-house-server-production.up.railway.app/myorders?email=${email}`
+        const url = `https://ware-house.onrender.com/myorders?email=${email}`
         const getOrders = async () => {
             try {
-                const {data } = await axiosPrivate.get(url)
+                const { data } = await axiosPrivate.get(url)
                 setOrders(data)
             }
             catch (error) {
-               // console.log(error)
+                // console.log(error)
                 if (error.response?.status === 401 || error.response?.status === 403) {
-                   //navigate('/login')
+                    //navigate('/login')
                 }
             }
 
@@ -29,30 +30,37 @@ const MyOrders = () => {
 
         getOrders();
 
-    },[user])
+    }, [user])
 
     return (
         <Container>
-            <h2 className='text-start' style={{color:"#105cc1"}}>my orders :{orders?.length}</h2>
+            <h2 className='text-start' style={{ color: "#105cc1" }}>my orders :{orders?.length}</h2>
             <hr />
             <div className='mt-5'>
-                <div className='row g-2'>
-                    {
-                        orders.map(order => <div key={order._id} className='col-md-3'>
-                            <Card className='h-100'>
-                                <Card.Img variant="top" src={order.img} />
-                                <Card.Body>
-                                    <Card.Title>{order?.product}</Card.Title>
+                {orders.length > 0 ?
+                
+                    <div className='row g-2'>
 
-                                    <Card.Text>
-                                        {order.date}
-                                    </Card.Text>
+                        {
+                            orders.map(order => <div key={order._id} className='col-md-3'>
+                                <Card className='h-100'>
+                                    <Card.Img variant="top" src={order.img} />
+                                    <Card.Body>
+                                        <Card.Title>{order?.product}</Card.Title>
 
-                                </Card.Body>
-                            </Card>
-                        </div>)
-                    }
-                </div>
+                                        <Card.Text>
+                                            {order.date}
+                                        </Card.Text>
+
+                                    </Card.Body>
+                                </Card>
+                            </div>)
+                        }
+                    </div>
+                    :
+                    <div>
+                        <Loading></Loading>
+                    </div>}
             </div>
         </Container>
     );

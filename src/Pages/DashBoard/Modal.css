@@ -1,0 +1,9 @@
+.modal-btn {
+    background-color: black;
+    width: 100%;
+    color: aliceblue;
+    margin: 5px 5px;
+    display: block;
+    padding: 10px 0px;
+    border-radius: 5px;
+}

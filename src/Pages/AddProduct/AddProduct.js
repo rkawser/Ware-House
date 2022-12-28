@@ -6,7 +6,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         
-        const url = 'https://ware-house-server-production.up.railway.app/review'
+        const url = 'https://ware-house.onrender.com/review'
         fetch(url, {
             method: 'POST',
             headers: {

@@ -8,7 +8,7 @@ const useToken = user => {
             const email = user?.user?.email
            
             if (email) {
-                const { data } = await axios.post('https://ware-house-server-production.up.railway.app/login',{ email })
+                const { data } = await axios.post('https://ware-house.onrender.com/login',{ email })
                 localStorage.setItem('accessToken', data)
             }
         }

@@ -20,7 +20,7 @@ const DetailsPage = () => {
     //from 
     const { register, handleSubmit,setValue } = useForm();
     const onSubmit = data => {
-        const url =`https://ware-house-server-production.up.railway.app/myorder`;
+        const url =`https://ware-house.onrender.com/myorder`;
         axios.post(url,data)
         .then(response=>{
             swal("Good job!", "Yay order confirm!", "success");

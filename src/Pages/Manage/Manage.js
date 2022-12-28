@@ -5,12 +5,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import axiosPrivate from '../../Api/AxiosPrivate';
 import auth from '../../Firebase/Firebase.init';
 import swal from 'sweetalert';
+import Loading from '../Share/Loading';
 const Manage = () => {
     const [orders, setOrders] = useState([]);
     const [user] = useAuthState(auth)
     useEffect(() => {
         const email = user?.email;
-        const url = `https://ware-house-server-production.up.railway.app/myorders?email=${email}`
+        const url = `https://ware-house.onrender.com/myorders?email=${email}`
         const getOrders = async () => {
             try {
                 const { data } = await axiosPrivate.get(url)
@@ -37,7 +38,7 @@ const Manage = () => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    const url = `https://ware-house-server-production.up.railway.app/myorders/${_id}`
+                    const url = `https://ware-house.onrender.com/myorders/${_id}`
                     axios.delete(url)
                         .then(() => {
                             const remainer = orders.filter(order => order._id !== _id)
@@ -51,16 +52,6 @@ const Manage = () => {
                 }
             });
 
-
-        // if (confirm) {
-        //     const url = `https://ware-house-server-production.up.railway.app/myorders/${_id}`
-        //     axios.delete(url)
-        //         .then(() => {
-        //             alert('your product delete')
-        //             const remainer = orders.filter(order => order._id !== _id)
-        //             setOrders(remainer)
-        //         })
-        // }
     }
 
     const handleApprov = () => {
@@ -71,7 +62,7 @@ const Manage = () => {
         <Container>
             <h2 style={{ color: '#105caa' }} className=' text-start '>manage your orders </h2>
             <hr />
-
+{ orders.length > 0 ? 
             <Table bordered hover className='mt-5'>
                 <thead>
                     <tr>
@@ -81,11 +72,14 @@ const Manage = () => {
                         <th>Image</th>
                         <th>Action</th>
                     </tr>
+
                 </thead>
+
                 {orders.map((order) => {
                     const { Name, product, date, status, _id, img } =
                         order;
                     return (
+
                         <tbody key={_id}>
                             <tr style={{ borderWidth: "1px" }}>
                                 <td>{product}</td>
@@ -108,8 +102,13 @@ const Manage = () => {
                         </tbody>
                     );
                 })}
-            </Table>
 
+            </Table>
+:
+            <div>
+                <Loading></Loading>
+            </div>
+            }
         </Container>
     );
 };

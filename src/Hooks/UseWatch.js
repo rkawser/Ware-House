@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const useWatch = () => {
     const [watches, setWatches] = useState([])
     useEffect(() => {
-        fetch('https://ware-house-server-production.up.railway.app/watch')
+        fetch('https://ware-house.onrender.com/watch')
         .then(res=>res.json())
         .then(data=>setWatches(data))
     }, [])

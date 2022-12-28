@@ -9,7 +9,7 @@ import Loading from '../Share/Loading';
 const Review = () => {
     const [review, setReview] = useState([])
     useEffect(() => {
-        fetch('https://ware-house-server-production.up.railway.app/review')
+        fetch('https://ware-house.onrender.com/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, [])
