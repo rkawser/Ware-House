@@ -7,6 +7,7 @@ import auth from '../../Firebase/Firebase.init';
 import Loading from '../Share/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import register from '../../image/register.png';
 import swal from 'sweetalert'
 const Register = () => {
     const [email, setEmail] = useState('');
@@ -73,7 +74,7 @@ const Register = () => {
 
                     <Col md={6}>
                         <div className='register-image'>
-
+                        <img src={register} alt=""  className='w-100'/>
                         </div>
                     </Col>
                 </Row>

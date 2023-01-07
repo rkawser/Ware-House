@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../Firebase/Firebase.init';
 import useToken from '../../Hooks/UseToken';
 import SocialLogin from '../Share/SocialLogin';
+import login from '../../image/login.png'
 import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -72,7 +73,7 @@ const Login = () => {
 
                     <Col md={6}>
                         <div className='login-image'>
-
+                        <img src={login} alt=""  className='w-75'/>
                         </div>
                     </Col>
                 </Row>

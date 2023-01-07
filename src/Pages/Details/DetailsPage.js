@@ -43,7 +43,7 @@ const DetailsPage = () => {
                         <img src={Product.img} className='img-fluid' alt="" />
                         <div className='d-flex justify-content-around mt-2'>
                             <h5>{Product.name}</h5>
-                            <p>price: ${Product.price}</p>
+                            <p className='text-primary'>price: ${Product.price}</p>
                         </div>
                     </div>
                 </Col>

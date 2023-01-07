@@ -13,26 +13,39 @@ const Banner = () => {
                         <Col md={12}>
                             <Carousel fade>
                                 <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 "
-                                        src={banner1}
-                                        alt="First slide"
-                                    />
+                                    <div className='bannerImage'>
+                                        <div className='banner-text p-5'>
+                                            <h4 >From $550</h4>
+                                            <h2 className='text-light'>QLED 8K</h2>
+                                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Numquam, similique fuga! Neque aliquid culpa repudiandae.</p>
 
+                                            <button className='banner-btn'>Buy Now</button>
+                                        </div>
+
+                                    </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img
-                                        className="d-block img-fluid h-100"
-                                        src={banner2}
-                                        alt="First slide"
-                                    />
+                                    <div className='bannerImage2'>
+                                        <div className='banner-text p-5'>
+                                            <h4 >From $550</h4>
+                                            <h2 className='text-light'>QLED 8K</h2>
+                                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Numquam, similique fuga! Neque aliquid culpa repudiandae.</p>
+
+                                            <button className='banner-btn'>Buy Now</button>
+                                        </div>
+
+                                    </div>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                    <img
-                                        className="d-block w-100 "
-                                        src={banner3}
-                                        alt="First slide"
-                                    />
+                                    <div className='bannerImage3'>
+                                        <div className='banner-text p-5'>
+                                            <h2 className='text-light'>Vinova SmartPhone</h2>
+                                            <p className='text-light'>Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit. Numquam, similique fuga! Neque aliquid culpa repudiandae.</p>
+
+                                            <button className='banner-btn'>Buy Now</button>
+                                        </div>
+
+                                    </div>
                                 </Carousel.Item>
                             </Carousel>
                         </Col>
@@ -51,8 +64,9 @@ const Banner = () => {
 
                 <Col md={4}>
                     <Row className='g-4'>
-                        <Col md={6}><div className='sidebanner1'>
-                        </div>
+                        <Col md={6}>
+                            <div className='sidebanner1 '>
+                            </div>
                         </Col>
                         <Col md={6}>
                             <div className='sidebanner2'></div>
@@ -67,15 +81,15 @@ const Banner = () => {
                             <div className='sidebanner4'></div>
                         </Col>
 
-                     
-                            
+
+
                         <Col md={6}><div className='sidebanner5'>
                         </div>
                         </Col>
                         <Col md={6}>
                             <div className='sidebanner6'></div>
                         </Col>
-                   
+
 
                     </Row>
                 </Col>

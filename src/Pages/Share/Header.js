@@ -10,7 +10,7 @@ import avatar from '../../image/avatar.png'
 import Modal from '../DashBoard/Modal';
 const Header = () => {
     const [user] = useAuthState(auth);
-    // const userPhoto = user?.photoURL ;
+   
    
     return (
         <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -21,9 +21,9 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to='/'>Home</Nav.Link>
-                        <Nav.Link href="home#product">Products</Nav.Link>
-                        <Nav.Link as={Link} to='/about'>About</Nav.Link>
+                        <Nav.Link className='fw-bold text-light' as={Link} to='/'>Home</Nav.Link>
+                        <Nav.Link className='fw-bold text-light' href="home#product">Products</Nav.Link>
+                        <Nav.Link className='fw-bold text-light' as={Link} to='/about'>About</Nav.Link>
                     </Nav>
 
                     <Nav>
@@ -33,9 +33,6 @@ const Header = () => {
                        </Nav.Link>
 }
                         {user ?
-                            // <button onClick={() => signOut(auth).then(() => {
-                            //     swal("!", "SignOut success!😏", "success");
-                            // })} className='btn btn-danger'>SignOut</button>
 
                             <img src={user ? user?.photoURL : avatar} style={{
                                 width: "50px",
@@ -45,7 +42,7 @@ const Header = () => {
                             }} className='' alt="" />
                             :
 
-                            <Link to='/login'><button className='btn btn-primary'>LogIn</button></Link>
+                            <Link to='/login'><button className='btn btn-primary fw-bold'>LogIn</button></Link>
 
                         }
                     </Nav>

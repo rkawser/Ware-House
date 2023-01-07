@@ -27,7 +27,7 @@
 }
 
 .about-text{
-    text-align: justify;
+    text-align: left;
 }
 
 .about-text p{
@@ -36,7 +36,8 @@
 
 .about-text h6{
     color: black;
-    background-color: #105dca25;
+    background-color: #105dca10;
     padding: 10px 5px;
     border-radius: 5px;
+    font-size: 20px;
 }

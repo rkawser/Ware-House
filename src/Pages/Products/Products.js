@@ -57,7 +57,7 @@ const Products = () => {
 
                 <Col md={9} className='product-text2 mt-5'>
 {               products.length > 0  ?
-                    (<div id='product' className='row gy-5'>
+                    (<div id='product' className='row gy-5 px-2'>
                         {
                             products.map(service => <Product key={service._id} service={service}></Product>)
                         }

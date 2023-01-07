@@ -1,51 +1,148 @@
+.bannerImage {
+    background-image: url('https://i.ibb.co/MRFzyqM/banner1.jpg');
+    height: 390px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerImage2 {
+    background-image: url('https://i.ibb.co/VxbpkZ7/banner2.jpg');
+    height: 390px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannerImage3 {
+    background-image: url('https://i.ibb.co/FY1N8bP/banner3.jpg');
+    height: 390px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-text {
+    text-align: justify;
+
+}
+
+.banner-text h4 {
+    color: #ff6c29;
+    font-weight: bold;
+}
+
+.bannerImage2 h4 {
+    color: #559fea;
+}
+
+.banner-text h2,
+p {
+    margin: 25px 0px;
+    /* color: rgba(255, 255, 255, 0.897); */
+}
+
+.banner-btn {
+    color: #ee530b;
+    background-color: white;
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.banner-btn:hover {
+    background-color: #ee530b;
+    color: aliceblue;
+}
 
 
-.banner-2{
+.banner-2 {
     background-image: url('https://i.ibb.co/7pB2PyG/10008.jpg');
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size:contain;
 }
-.banner-3{
+
+
+.banner-3 {
     background-image: url('https://i.ibb.co/cN5hB2B/10007.jpg');
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size:contain;
 }
 
-.sidebanner1{
+.sidebanner1 {
     background-image: url('https://i.ibb.co/23j4z7N/10004.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
 }
-.sidebanner2{
+
+
+
+.sidebanner2 {
     background-image: url('https://i.ibb.co/hZw4HMG/10005.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
 }
-.sidebanner3{
+
+.sidebanner3 {
     background-image: url('https://i.ibb.co/DrkDdJL/10006.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
 }
-.sidebanner4{
+
+.sidebanner4 {
     background-image: url('https://i.ibb.co/XWTCgGB/10010.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 180px;
 }
-.sidebanner5{
+
+.sidebanner5 {
     background-image: url('https://i.ibb.co/qy9t5n1/10011.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
 }
-.sidebanner6{
+
+.sidebanner6 {
     background-image: url('https://i.ibb.co/61z5Vzp/10009.jpg');
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
+}
+
+.sidebanner1:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.sidebanner2:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.sidebanner3:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.sidebanner4:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.sidebanner5:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
+}
+.sidebanner6:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    cursor: pointer;
 }

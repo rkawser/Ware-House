@@ -28,7 +28,7 @@ const SmartWatch = () => {
             </Row>
 {
     watches.length > 0 ?
-            <div className='row gy-5'>
+            <div className='row gy-5 px-2'>
                {
                     watches.map(watch => <Watch key={watch._id} watch={watch}></Watch>)
                 }
